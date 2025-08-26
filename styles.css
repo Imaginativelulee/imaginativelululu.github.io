@@ -1,0 +1,533 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2; 
+    overflow-y: auto; 
+    background-image: url("https://i.ibb.co/ZRH1hM52/dots.png"); 
+    background-position: center;
+    background-size: contain; 
+    background-repeat: repeat;
+    
+}
+
+aside {
+    flex: 1; 
+    overflow-y: auto; 
+    background-color: #B59C92;
+}
+
+header {
+    background-color: #B59C92;
+    color: rgba(247, 247, 247, 0);  
+}
+
+footer {
+    background: #574128;
+    color: rgb(138, 99, 92);
+    text-align: center; 
+    font-size: 14px;
+} 
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    flex-wrap: wrap; 
+  }
+  
+ 
+  .logo {
+    width: 45px;
+    height: auto;
+  }
+
+
+.Jersey-10 {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+  .pixelify-sans {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800; 
+    font-style: normal;
+}
+
+
+
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    
+  }
+  
+ 
+  .nav-icon {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-icon:hover {
+    transform: scale(1.1);
+  }
+  
+
+  
+  .right {
+    display: flex;
+    gap: 8px;
+  }
+
+
+.custom-share-icon {
+    width: 35px; 
+    transition: transform 0.3s ease;
+    
+    
+}
+
+.custom-share-icon:hover {
+    transform: scale(1.1); 
+}
+
+.right {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+
+
+.small {
+    width: 100px; 
+    height: 121px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out; 
+    position: relative; 
+    left: 40px;
+    top: -77px; 
+    z-index: 3;
+}  
+
+.large {
+    width: 400px; 
+}
+
+.animated {
+    animation: imageSwap 0.6s infinite alternate; 
+}
+
+@keyframes imageSwap {
+    25% {
+        content: url("https://i.ibb.co/CppKzyJ6/IMG-1247-1.png");
+    }
+    50% {
+        content: url("https://i.ibb.co/HLRXRdDc/IMG-1248.png");
+        
+    }
+    
+}  
+
+
+
+h1 {
+    display: flex; 
+    font-size: 4em; 
+    color: #dd83aa; 
+    justify-content: center;
+    align-items: center;
+    animation: bounce 0.6s infinite alternate ease-in-out;
+    text-shadow: 5px 5px 1px rgb(81, 55, 34); 
+}
+
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+  
+.card-image {
+    position: relative;
+    width: 400px;
+    height: 266px;
+    z-index: 1;
+    left: -80px;
+    top: 50px;
+}
+ 
+
+
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    position: relative; 
+    z-index: 1;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    margin-top: 30px;
+    z-index: 1;
+    position: relative;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 87%;
+    color: rgb(123, 90, 77);
+    gap: 40px;
+    margin-top: -140px; /* Less intense shift */
+    margin-left: 48px;
+    position: relative;
+    z-index: 2; /* Put it on top */
+    font-size: 17px;
+}
+.paragraph {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    max-width: 390px;
+  
+}
+
+
+h3 {
+    position: relative; 
+    left: 40px;
+    top: 30px; 
+    z-index: 2;
+    font-size: 2em;
+    color: #d48bab;
+    text-shadow: 3px 3px 0px #87563b;
+}
+
+
+.my-persona {
+    position: absolute;
+    top: 479px; 
+    left: 109px; 
+    z-index: 10;
+    max-width: 320px;
+    font-family: 'Pixelify Sans', sans-serif; 
+}
+
+
+
+.text-on-image {
+    position: absolute;
+    top: 330px; 
+    left: 205px; 
+    z-index: 10;
+    max-width: 300px;
+    font-family: 'Pixelify Sans', sans-serif;
+  }
+  
+  
+  .text-on-image h2 {
+    font-size: 1em;
+    color: #797987;
+  }
+  
+  
+  .text-on-image .birth-date {
+    font-size: 0.7em;
+    color: rgb(161, 147, 152);
+  }
+  
+  #pancake {
+    font-size: 0.6em;
+    color: rgb(189, 179, 186);
+  }
+  
+  
+  .my-persona {
+    font-size: 0.7em;
+    color: #e195d2;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+
+.club-icon {
+    position: relative;
+    top: -590px; 
+    left: 395px; 
+    font-size: 44px; 
+    color: rgb(85, 69, 79);
+    z-index: 2000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes jump-shake {
+    0% { transform: translateY(0) rotate(0deg); }
+    20% { transform: translateY(-10px) rotate(-3deg); }
+    40% { transform: translateY(0) rotate(3deg); }
+    60% { transform: translateY(-5px) rotate(-2deg); }
+    80% { transform: translateY(0) rotate(2deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+.letter-animate {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    animation: jump-shake 1s infinite ease-in-out;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    z-index: 1001;
+}
+
+
+.letter-animate.open-letter {
+    animation: none;
+    transform: scale(1);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+
+
+.quiz-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#quiz-box {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+#quiz-box:not(.hidden) {
+    transform: scale(1);
+        opacity: 1;
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.762);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 999;
+    pointer-events: none;
+}
+
+#overlay.show-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.quiz-content h2 {
+    position: absolute; 
+    display: flex;
+    top: 280px;  
+    left: 340px;
+    color:rgb(102, 75, 66)
+}
+
+.two-line-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;     
+    top: 350px;  
+    left: 260px;
+    width: 400px; 
+    text-align: center;  
+    line-height: 1.5;    
+    color:#d48bab
+}
+
+
+
+
+.answer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -400px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.answer-img {
+    width: 100px; 
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.answer-img.active {
+    opacity: 1;
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+
+.answer-img.inactive {
+    filter: brightness(0.7); 
+    cursor: not-allowed;
+}
+
+
+
+
+.folder-container {
+    position: relative;  
+    top: 10px;   
+    left: 38px;  
+    width: 610px; 
+    height: 640px;
+}
+
+.file {
+    position: absolute;  
+    width: 100%; 
+    height: 100%;
+    cursor: pointer;}
+    
+
+#file1 {
+    opacity: 1;  
+    z-index: 2;
+}
+
+#file2 {
+    opacity: 0;  
+    z-index: 1;
+}
+
+
+
+
+
+.animated-container {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%; 
+    height: 40%; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: slide 3s infinite alternate ease-in-out; 
+    z-index: 10;
+}
+
+.image1, .image2 {
+    width: 100%; 
+    height: auto;
+    opacity: 0;
+    position: absolute;
+}
+
+.image1 {
+    animation: fadeInOut 3s infinite alternate;
+}
+
+.image2 {
+    animation: fadeInOut 3s infinite alternate 1.5s; 
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(50%, -50%) translateX(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(-100%);
+    }
+}
+
+
+
+
+
+
+.home-button {
+    display: inline-block;
+    background-color: #574128; 
+    color: rgb(226, 205, 121);
+    font-size: 19px;
+    text-align: center;
+}
+
+.home-button:hover {
+    background-color: #d591be; 
+    transform: scale(1.05); 
+}
