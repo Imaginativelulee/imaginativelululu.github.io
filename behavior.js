@@ -1,4 +1,5 @@
-   var thumbnailElement = document.getElementById("smart_thumbnail");
+document.addEventListener("DOMContentLoaded", function() {
+    var thumbnailElement = document.getElementById("smart_thumbnail");
   
     thumbnailElement.addEventListener("click", function() {
         // Toggle between small and large sizes
@@ -93,3 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+ 
